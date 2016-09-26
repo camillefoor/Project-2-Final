@@ -1,0 +1,300 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+  padding:0;
+  text-align:center;
+  font-family: 'Poiret One', cursive;
+  color: #3a3a3a;
+  background:#f7f5f0;
+  line-height:1.6;
+}
+
+p {
+  font-size:.95em;
+  margin-bottom:1.8em;
+}
+
+img {
+  max-width:100%;
+}
+
+.profile-img {
+  background-color: #f7f5f0;
+ box-shadow: 12px 13px 53px -8px rgba(99,92,99,1);
+
+  
+  }
+
+/*Link Styles*/
+a {
+  text-decoration:none;
+  color: darkgrey;
+}
+
+a:hover {
+  color:black;
+}
+/* ================
+Base layout Styles
+==================*/
+
+/* ----Navigation --*/
+.name {
+  font-size:3em;
+  margin:0px;
+}
+
+.main-nav {
+  display:block;
+  list-style:none;
+  padding:20px;
+  margin-top:10px;
+}
+
+.name a,
+.main-nav a {
+  display:block;
+  text-align:center;
+  padding:10px 15px;
+}
+
+.main-nav a {
+  font-size:.95em;
+  text-transform:uppercase;
+}
+
+/* ----Layout Containers --*/
+
+.main-header {
+  padding-top:.5em;
+  padding-bottom:.5em;
+}
+
+.container{
+  padding: 1em;
+}
+
+.container ul {
+  padding:0;
+}
+.container li {
+  list-style:none;
+}
+
+.col {
+  padding-right:1em;
+  padding-left:1em;
+}
+
+p {
+  padding-right:1em;
+  padding-left: 1em;
+}
+
+#skills h2 {
+ padding-top:2em;
+ font-size:1.2em;
+}
+
+#skills p {
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#skills img {
+  padding-top:2em;
+  padding-bottom:2em;
+  width:70%;
+}
+
+.main-footer {
+  padding:2em 0;
+  margin-top:30px;
+}
+
+.contact {
+  font-size:1.2em;
+  text-transform:uppercase;
+}
+.contact p {
+  margin: 0;
+  font-size:.95em;
+  text-transform:none
+}
+
+.main-footer {
+ padding:2em 0;
+ margin-top:30px;
+ overflow:hidden;
+}
+.footer-name {
+  float: left
+  
+}
+
+.back {
+  float:right;
+  list-style:none;
+  margin:0;
+}
+
+#footer-col-1 {
+  float:left;
+  text-align:left;
+}
+
+#footer-col-2 {
+  float:right;
+  text-align:right;
+}
+
+.footer-col {
+  font-size:.8em;
+  width: 50%;
+  padding-bottom:1.7em;
+  }
+
+#footer-col-3 {
+  display:none;
+}
+/* ----Float clearfix --*/
+
+.clearfix::after {
+  content:" ";
+  display:table;
+  clear:both;
+}
+
+/* ================
+Media Queries
+==================*/
+
+@media (min-width: 769px) {
+
+
+.main-header {
+  width: 100%;
+  top: 0;
+}
+
+.container {
+ display: flex;
+ flex-wrap: wrap;
+ margin: auto;
+ padding: 1.5em;
+}
+
+  .navigation{
+    flex-direction: column;
+  }
+  
+  .container div{
+    flex: 1 50%;
+    padding: .5em;
+  }
+  
+.profile {
+  margin-left:25%;
+  margin-right:25%;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+}
+  
+  .profile p{
+    font-size: 1.5em;
+   
+  }
+  
+  .profile img{
+    float: right;
+    margin-left:10px;
+  }
+
+.main-nav li {
+  display:inline-block;
+  margin-left: 15px;
+}
+
+#skills {
+  margin-bottom:2.5em;
+  }
+
+#skills img {
+  width:50%;
+}
+  
+#footer-col-1 {
+  width: 40%;
+}  
+  
+#footer-col-2 {
+  display:none;
+}
+
+#footer-col-3 {
+  display:block;
+  float:right;
+  width:60%;
+}
+
+#footer-col-3 ul {
+  float:right;
+}
+
+#footer-col-3 ul li {
+  list-style:none;
+  display:inline-block;
+  padding-bottom:2em;
+  padding-left:2em;
+  font-weight:bold;
+}
+  .back{
+    margin-right: 1em;
+  }
+
+
+.clearfix::after {
+  content:"";
+  display:table;
+  clear:both;
+}
+.wrap {
+  min-height: calc(120vh - 155.55px);
+}
+
+}
+
+
+
+@media (min-width: 1025px) {
+
+.container {
+  width:90%;
+  max-width:1150px;
+}
+
+.profile {
+  display:inline-block;
+}
+
+.profile img {
+  margin-left: 20px;
+}
+  
+  .container div{
+    flex: 1 33%;
+  }
+
+.main-footer {
+  margin-left: 10%;
+  margin-right:10%;
+}
+}
+
+
+
